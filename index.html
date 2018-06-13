@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>VRChat OSC Bridge - DEMO</title>
+    <script src="vrc-osc-bridge.js"></script>
+    <script>
+        function confirm(status) {
+            if (status != 200) {
+                document.getElementById('response').innerText = "[失敗] VRChat OSC Bridge の応答 : " + status;
+            } else {
+                document.getElementById('response').innerText = "[成功] VRChat OSC Bridge の応答 : " + status;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>VRChat OSC Bridge - DEMO</h1>
+    <h2>VRChat OSC Bridge が起動していない場合、 OSCメッセージは送信されません。</h2>
+    <input type="button" value="/VRC_OSC/TEST に 0 を送信" onClick="setTimeout((sendosc('/VRC_OSC/TEST',0,confirm)),0)">
+    <input type="button" value="/VRC_OSC/TEST に 1 を送信" onClick="setTimeout((sendosc('/VRC_OSC/TEST',1,confirm)),0)">
+    <p id="response"></p>
+</body>
+
+</html>
