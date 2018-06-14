@@ -12,3 +12,7 @@ VRChat の WebPanel に組みこまれた `vrc-osc-bridge.js` が、クライア
 ## 注意
 このソフトウェアの利用に際し、一切の責任を負いません。
 また、開発中であり実用には適しません。
+
+## 関連
+ - [YouTube Live のスーパーチャット発生イベントをメッセージ送信元とするブックマークレット
+ (VRChat OSC Bridge 専用ツール)](https://gist.github.com/yukimochi/c0f9b756188fefa6d01a89865446a740)
